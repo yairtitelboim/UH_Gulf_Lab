@@ -23,8 +23,17 @@ Open `.env.local` and fill in:
 | Variable | Where to get it | Required? |
 | --- | --- | --- |
 | `VITE_MAPBOX_ACCESS_TOKEN` | Your own free token from https://account.mapbox.com/access-tokens/ (starts with `pk.`) | Yes |
-| `VITE_SUPABASE_URL` | Shared by your instructor, or your own Supabase project | No |
-| `VITE_SUPABASE_ANON_KEY` | Shared by your instructor, or your own Supabase project | No |
+| `VITE_SUPABASE_URL` | See **Class Supabase values** below, or your own project | No |
+| `VITE_SUPABASE_ANON_KEY` | See **Class Supabase values** below, or your own project | No |
+
+### Class Supabase values
+
+Copy these into `.env.local` to use the live class data. The key can only read the `student_projects` view.
+
+```
+VITE_SUPABASE_URL=https://gzhmontqydxtqvkjcegh.supabase.co
+VITE_SUPABASE_ANON_KEY=sb_publishable_6TKTU8neoxyH17YJ6V-m9A_FdAAve-l
+```
 
 ```bash
 npm run dev
